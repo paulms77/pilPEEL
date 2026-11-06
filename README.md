@@ -118,6 +118,15 @@ for i in range(16):
     plt.imshow(test_x[i])
 ```
 
+### Results
+
+![Predictions against ground truth on validation images](docs/predictions.png)
+
+*Validation batch, each panel titled `pred / truth`. Most are correct; the
+visible failures are glass predicted as plastic and glass predicted as paper —
+both transparent-container cases, which is exactly the confusion described
+below.*
+
 ## Notes
 
 **Glass and plastic are the hard pair.** Both are transparent and both produce
